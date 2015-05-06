@@ -9,3 +9,4 @@ insecure
 twbs:bootstrap
 underscore
 iron:router
+fortawesome:fontawesome
