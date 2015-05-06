@@ -1,0 +1,17 @@
+<template name="layout">
+  <div class="container">
+    <header class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Golf #Beta</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                {{> menu}}
+            </ul>
+      </div>
+    </header>
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>
