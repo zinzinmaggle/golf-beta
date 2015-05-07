@@ -1,8 +1,8 @@
 <template name="menu">
   <ul class="nav nav-pills">
-	  {{#if currentUser}}<li role="presentation" class="active"><a href="#">Blog</a></li>
+	  {{#if currentUser}}<li role="presentation" class="active"><a href="{{pathFor 'postsList'}}">Blog</a></li>
 	  <li role="presentation"><a href="#">Game</a></li>
-	  <li role="presentation"><a href="#">Profile</a></li>{{/if}}
+	  <li role="presentation"><a href="{{pathFor 'userProfil'}}">Profile</a></li>{{/if}}
 	  {{> loginButtons}}
   </ul>
 </template>

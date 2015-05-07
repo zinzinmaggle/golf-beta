@@ -10,3 +10,7 @@ if (Posts.find().count() === 0) {
 
   
 }
+
+Meteor.users.find({ _id: this.userId },
+    { fields: { username: 1, firstname : 1, lastname :1 } }
+);
