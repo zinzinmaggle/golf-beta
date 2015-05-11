@@ -3,7 +3,11 @@
    
   <h3>Your informations</h3>
   <p>ID : {{_id}}</p>  
-  <p>Mail : {{emails}}</p>
+  <p>Mail : 
+  	{{#each emails}}
+  		{{address}}
+	{{/each}}
+  </p>
   {{> ProfileForm}}
   </div>
 </template>
